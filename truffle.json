@@ -1,0 +1,51 @@
+{
+  "build": {
+    "index.html": "index.html",
+    "publish.html": "publish.html",
+    "access.html": "access.html",
+    "test.html": "test.html",
+    "app.js": [
+      "javascripts/lib/ipfsapi.js",
+      "javascripts/lib/react.js",
+      "javascripts/lib/react-dom.js",
+      "javascripts/components/app.es6",
+      "javascripts/components/file.es6",
+      "javascripts/components/crypto.es6",
+      "javascripts/components/ipfs.es6",
+      "javascripts/components/request.es6",
+      "javascripts/components/progressbar.es6",
+      "javascripts/components/dropzone.es6"    
+    ],
+    "jsx.js": [
+      "jsx/requestList.jsx"
+    ],
+    "buffer.js" : [
+      "javascripts/lib/buffer.js"
+    ],
+    "require.js" : [
+      "javascripts/lib/require.js"
+    ],
+    "test.css" : ["test/lib/mocha.css"],
+    "test_libs.js" : [
+      "test/lib/jquery.js",
+      "test/lib/expect.js",
+      "test/lib/mocha.js",
+      "test/lib/chai.js",
+      "test/lib/sinon.js"
+    ],
+    "test.js" : [
+      "test/components/crypto.es6"
+    ],
+    "app.css": [
+      "stylesheets/app.css"
+    ],
+    "images/": "images/"
+  },
+  "deploy": [
+    "DocumentManager"
+  ],
+  "rpc": {
+    "host": "localhost",
+    "port": 8545
+  }
+}

@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="./test.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <script src="./test_libs.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="./app.js"></script>
+  <script src="./test.js"></script>
+  <script data-main="./buffer.js" src="./require.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>
